@@ -11,8 +11,8 @@ $(info CUR_DIR: $(CUR_DIR))
 JANSSONDIR       = jansson-master
 LIBEVENTDIR      = libevent-master
 LIBSEARPCDIR     = libsearpc-master
-SEAFILEDIR       = seafile-master
-SEAFILECLIENTDIR = seafile-client-master
+SEAFILEDIR       = seafile-dev_my
+SEAFILECLIENTDIR = seafile-client-dev_my
 
 ifeq ($(HOST_OS), MINGW32)
 HOST = i686-w64-mingw32
@@ -64,8 +64,8 @@ fetch:
 	wget -q -O $(JANSSONDIR).zip https://github.com/akheron/jansson/archive/master.zip;\
 	wget -q -O $(LIBEVENTDIR).zip https://github.com/libevent/libevent/archive/master.zip;\
 	wget -q -O $(LIBSEARPCDIR).zip https://github.com/haiwen/libsearpc/archive/master.zip;\
-	wget -q -O $(SEAFILEDIR).zip https://github.com/gottaBoy/seafile/archive/refs/heads/dev_my.zip;\
-	wget -q -O $(SEAFILECLIENTDIR).zip https://github.com/gottaBoy/seafile-client/archive/refs/heads/dev_my.zip
+	wget -q -O $(SEAFILEDIR).zip https://github.com/gottaBoy/seafile/archive/dev_my.zip;\
+	wget -q -O $(SEAFILECLIENTDIR).zip https://github.com/gottaBoy/seafile-client/archive/dev_my.zip
 
 extract:
 	rm -rf $(JANSSONDIR);\
