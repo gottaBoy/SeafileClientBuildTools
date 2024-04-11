@@ -64,8 +64,8 @@ fetch:
 	wget -q -O $(JANSSONDIR).zip https://github.com/akheron/jansson/archive/master.zip;\
 	wget -q -O $(LIBEVENTDIR).zip https://github.com/libevent/libevent/archive/master.zip;\
 	wget -q -O $(LIBSEARPCDIR).zip https://github.com/haiwen/libsearpc/archive/master.zip;\
-	wget -q -O $(SEAFILEDIR).zip https://github.com/gottaBoy/seafile/archive/refs/heads/dev_my.zip;\
-	wget -q -O $(SEAFILECLIENTDIR).zip https://github.com/gottaBoy/seafile-client/archive/refs/heads/dev_my.zip
+	wget -q -O $(SEAFILEDIR).zip https://github.com/gottaBoy/seafile/archive/master.zip;\
+	wget -q -O $(SEAFILECLIENTDIR).zip https://github.com/gottaBoy/seafile-client/archive/master.zip
 
 extract:
 	rm -rf $(JANSSONDIR);\
