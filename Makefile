@@ -86,7 +86,8 @@ rmzips:
 	rm -f $(SEAFILEDIR).zip;\
 	rm -f $(SEAFILECLIENTDIR).zip
 
-init: fetch extract rmzips
+# init: fetch extract rmzips
+init: fetch extract
 
 jansson:
 	cd $(JANSSONDIR);\
