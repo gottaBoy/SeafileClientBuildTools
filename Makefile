@@ -61,11 +61,11 @@ endif
 default: clean init seafile-client
 
 fetch:
-	wget -q -O $(JANSSONDIR).zip https://github.com/akheron/jansson/archive/master.zip;\
-	wget -q -O $(LIBEVENTDIR).zip https://github.com/libevent/libevent/archive/master.zip;\
-	wget -q -O $(LIBSEARPCDIR).zip https://github.com/haiwen/libsearpc/archive/master.zip;\
-	wget -q -O $(SEAFILEDIR).zip https://github.com/gottaBoy/seafile/archive/dev_my.zip;\
-	wget -q -O $(SEAFILECLIENTDIR).zip https://github.com/gottaBoy/seafile-client/archive/dev_my.zip
+	wget -q -O $(JANSSONDIR).zip -nc https://github.com/akheron/jansson/archive/master.zip;\
+	wget -q -O $(LIBEVENTDIR).zip -nc https://github.com/libevent/libevent/archive/master.zip;\
+	wget -q -O $(LIBSEARPCDIR).zip -nc https://github.com/haiwen/libsearpc/archive/master.zip;\
+	wget -q -O $(SEAFILEDIR).zip -nc https://github.com/gottaBoy/seafile/archive/dev_my.zip;\
+	wget -q -O $(SEAFILECLIENTDIR).zip -nc https://github.com/gottaBoy/seafile-client/archive/dev_my.zip
 
 extract:
 	rm -rf $(JANSSONDIR);\
